@@ -12,15 +12,15 @@ Design, assembly and configuration of a 5-inch freestyle FPV drone based on Beta
 ## Hardware Used
 | Component | Reference |
 |----------|-----------|
-| Frame | To be completed |
-| Flight Controller | To be completed |
-| ESC | To be completed |
-| Motors | To be completed |
-| FPV Camera | To be completed |
-| Video Transmitter | To be completed |
-| Radio Receiver | ExpressLRS |
-| Battery | LiPo 6S |
-| Buzzer | TBC |
+| Frame | MotorRiot Tanq2 |
+| Flight Controller | Mamba MK4 H743 V2 |
+| ESC | Diatone 4in1 F55 128K |
+| Motors | Velox V2207 V2 1750KV |
+| FPV Camera | Foxeer T-Rex mini |
+| Video Transmitter | SpeedyBee TX800 |
+| Radio Receiver | RadioMaster Nano ELRS RP1 2.4 GHz V2 |
+| Battery | LiPo Tattu 6S 1300 mAh |
+| Buzzer | Vifly Finder 2 Autonomous Buzzer |
 
 ## System Architecture
 LiPo Battery → 4-in-1 ESC → Motors  
