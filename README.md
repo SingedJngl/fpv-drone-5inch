@@ -23,17 +23,29 @@ Design, assembly and configuration of a 5-inch freestyle FPV drone based on Beta
 | Buzzer | Vifly Finder 2 Autonomous Buzzer |
 
 ## System Architecture
-LiPo Battery → 4-in-1 ESC → Motors  
-Flight Controller → Radio Receiver / VTX / Camera / Buzzer
+The drone is built around an H7 flight controller connected to a 4-in-1 ESC, four brushless motors, an ExpressLRS receiver, an FPV camera and an analog video transmitter.
+
+The wiring diagram below summarizes the main electrical and signal connections.
+<img src="image/diatone-mamba-h7-fc-flight-controller-manual-instructions-wiring.webp" alt="FPV drone wiring diagram" width="700">
+
+Main connections:
+- The LiPo battery powers the 4-in-1 ESC directly.
+- The ESC powers and communicates with the flight controller.
+- The motors are driven through the ESC using the DShot protocol.
+- The ExpressLRS receiver communicates with the flight controller through CRSF over UART.
+- The FPV camera is connected to the flight controller for OSD overlay.
+- The VTX receives video output from the flight controller and is configured through IRC Tramp over UART.
 
 ## Software Configuration
 - Firmware: Betaflight
+- UART configuration
+- Video System : Analogic via IRC Tramp transmitter protocol
 - ESC protocol: DShot 600
 - Radio protocol: CRSF
-- Flight modes: ACRO
-- Failsafe configured
 
 ## Tuning
+- Flight modes: ACRO
+- Failsafe stage 1 and 2 configured
 - PID tuning
 - Gyro filters
 - Rates
@@ -49,7 +61,7 @@ Flight Controller → Radio Receiver / VTX / Camera / Buzzer
 - Filter/PID adjustments
 
 ## Issues Encountered
-- Example: video noise
+- Video noise
 - Solutions implemented
 
 ## Results
