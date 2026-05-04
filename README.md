@@ -26,7 +26,7 @@ Design, assembly and configuration of a 5-inch freestyle FPV drone based on Beta
 The drone is built around an H7 flight controller connected to a 4-in-1 ESC, four brushless motors, an ExpressLRS receiver, an FPV camera and an analog video transmitter.
 
 The wiring diagram below summarizes the main electrical and signal connections.
-<img src="image/diatone-mamba-h7-fc-flight-controller-manual-instructions-wiring.webp" alt="FPV drone wiring diagram" width="700">
+<img src="images/diatone-mamba-h7-fc-flight-controller-manual-instructions-wiring.webp" alt="FPV drone wiring diagram" width="700">
 
 Main connections:
 - The LiPo battery powers the 4-in-1 ESC directly.
